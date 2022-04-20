@@ -115,3 +115,4 @@ jobs:
         appName: ${{ env.FUNCTION_APP_NAME }}
         reset: true
     
+    
