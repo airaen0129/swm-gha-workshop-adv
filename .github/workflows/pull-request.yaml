@@ -7,7 +7,7 @@ on:
 
 jobs:
   call_build_test:
-    uses: airaen0129/swm-gha-workshop-adv/.github/workflow/build-test.yaml@main
+    uses: airaen0129/swm-gha-workshop-adv/.github/workflows/build-test.yaml@main
     with:
       job_name: 'Build and Test for PR'
       app-name: api
