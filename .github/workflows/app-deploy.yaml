@@ -1,0 +1,23 @@
+name: 'SWM: Deploy t Azure'
+
+on:
+  push:
+    branches:
+     ain
+
+jobs:
+  build_test:
+    name: 'Build and Test'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set environment variables
+      shell: bash
+      run: |
+        echo "FUNCTION_APP_PATH=${{ github.workspace }}/api" >> $GITHUB_ENV   # github.workspace = 루트 디렉토리
+      
+    - name: Check environment variables
+      shell: bash
+      run: |
+        echo $FUNCTION_APP_PATH
