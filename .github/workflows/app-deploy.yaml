@@ -1,4 +1,4 @@
-name: 'SWM: Deploy t Azure'
+name: 'SWM: Deployt Azure'
 
 on:
   push:
